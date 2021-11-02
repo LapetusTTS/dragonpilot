@@ -101,7 +101,7 @@ class CarState(CarStateBase):
       ret.cruiseState.speed = cp.vl["PCM_CRUISE_2"]["SET_SPEED"] * CV.KPH_TO_MS
 
     if self.CP.carFingerprint in TSS2_CAR:
-      self.acc_type = cp_cam.vl["ACC_CONTROL"]["ACC_TYPE"]
+      self.acc_type = 1
 
     if self.enable_distance_btn:
       if self.CP.carFingerprint in TSS2_CAR:
